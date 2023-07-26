@@ -20,7 +20,7 @@ This project was completed for the Survey Form certification project on freeCode
 
 ### Links
 
--   Live Site URL: [Click Here](#)
+-   Live Site URL: [Click Here](https://imtypicalt.github.io/fcc-survey-form/)
 
 ## My process
 
