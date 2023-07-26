@@ -30,7 +30,7 @@ This project was completed for the Survey Form certification project on freeCode
 
 ### What I learned
 
-Getting some hands on experience with all the different components you can use inside an HTML form like radio buttons, check boxes, text areas and selection dropdowns. It was also nice getting to understand how to build out a form and target the individual components with custom CSS classes.
+It was nice getting some hands on experience with all the different components you can use inside an HTML form like radio buttons, check boxes, text areas and selection dropdowns. It was also nice getting to understand how to build out a form and target the individual components with custom CSS classes.
 
 ```css
 .checkbox {
