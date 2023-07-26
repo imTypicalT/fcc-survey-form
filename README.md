@@ -1,4 +1,4 @@
-# freeCodeCamp - Survey Form
+# freeCodeCamp - Survey Form Project
 
 This project was completed for the Survey Form certification project on freeCodeCamp as part of their [Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design) course. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
