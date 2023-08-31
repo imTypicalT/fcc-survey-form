@@ -15,7 +15,7 @@ This project was completed for the Survey Form certification project on freeCode
 
 ### Screenshot
 
-![]()
+![](./images/Survey-Form-Build-a-Survey-Form-freeCodeCamp-org.png)
 
 ### Links
 
