@@ -1,119 +1,138 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400&display=swap');
 
 :root {
-    --white: #f3f3f3;
-    --darkblue: #21213b;
-    --darkblue-background: #0a0a23;
-    --darkblue-alpha: rgba(27, 27, 50, 0.8);
-    --green: #37af65;
-    --grey: #3b3b4f;
+  font-size: 16px;
+  --white: white;
+  --blue: #00ace0;
+  --white-background: white;
+  --grey-background: rgba(27, 27, 50, 0.8);
+  --green: #37af65;
+  --grey: #3b3b4f
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.4;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    background-color: var(--darkblue);
-    color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg,var(--blue), var(--green));
+  color: var(--white);
+  background-attachment: fixed;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 4rem
+}
+
+#title, #description {
+  text-align: center;
 }
 
 h1 {
-    font-weight: 400;
-    line-height: 1.2;
-    margin: 1em auto 0.5em auto;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 1em auto 0 auto;
 }
 
 p {
-    font-size: 1rem;
-    font-style: italic;
-    margin: 1em auto;
+  font-size: 18px;
+  font-style: italic;
+  margin: 1em auto;
 }
 
-h1,
-p {
-    text-align: center;
-}
 
-form,
-h1,
-p {
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
+form, h1, p {
+  max-width: 500px;
+  min-width: 300px;
 }
 
 form {
-    margin: 0 auto;
-    padding-bottom: 2em;
+  margin: 0 auto;
+  padding-bottom: 2em;
 }
 
+/* Fieldsets */
 fieldset {
-    border: none;
-    padding: 2rem 0;
-    border-bottom: 3px solid var(--grey);
-}
-
-fieldset:last-of-type {
-    border-bottom: none;
+  border: none;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--grey-background);
+  margin-bottom: 2rem
 }
 
 label {
-    display: block;
-    margin: 0.5rem 0;
+  display: block;
+  margin-top: 1rem
 }
 
-input,
-select,
-textarea {
-    margin: 10px 0 0 0;
-    width: 100%;
-    min-height: 2em;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
+label:first-of-type{
+  margin-top: 0
 }
 
-input,
-textarea {
-    background-color: var(--darkblue-background);
-    border: 1px solid var(--darkblue-background);
-    color: var(--white);
+label h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+input, select, textarea, #skill-level > label, #known-languages > label {
+  margin: 10px 0 0 0;
+  width:100%;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input, textarea {
+  background-color: var(--white-background);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: none;
+  color: black;
 }
 
 .inline {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
 }
 
 .checkbox {
-    width: unset;
-    display: inline-block;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
+  width: unset;
+  display: inline-block;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
 }
 
-input[type="submit"] {
-    display: block;
-    width: 60%;
-    margin: 1em auto;
-    height: 2em;
-    font-size: 1.1rem;
-    background-color: #3b3b4f;
-    border-color: white;
-    min-width: 300px;
+input[type=checkbox]:hover, input[type=radio]:hover, #dropdown:hover {
+  cursor: pointer;
+}
+
+#submit {
+  display: block;
+  width: 10rem;
+  margin: 1em auto;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: var(--grey-background);
+  color: white;
+}
+
+#submit:hover {
+  background-color: white;
+  color: var(--green);
+  cursor: pointer;
 }
 
 header {
-    padding: 0 0.5rem;
+  padding: 0 0.5rem;
 }
