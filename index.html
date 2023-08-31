@@ -1,156 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Survey Form Project</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1 id="title">Survey Project</h1>
-                <p id="description">
-                    This is a small project created for freeCodeCamp's
-                    "Responsive Web Design" course.
-                </p>
-            </header>
-            <form id="survey-form">
-                <fieldset>
-                    <label id="name-label" for="name"
-                        >Full Name:
-                        <input
-                            id="name"
-                            type="text"
-                            placeholder="your full name..."
-                            required
-                    /></label>
-                    <label id="email-label" for="email"
-                        >Email:
-                        <input
-                            id="email"
-                            type="email"
-                            placeholder="your@email.com"
-                            required
-                    /></label>
-                    <label id="number-label" for="number"
-                        >Age:
-                        <input
-                            id="number"
-                            type="number"
-                            min="13"
-                            max="110"
-                            placeholder="enter your age..."
-                    /></label>
-                </fieldset>
-                <fieldset>
-                    <label
-                        >How did you hear about us?
-                        <select id="dropdown">
-                            <option value="">(select one)</option>
-                            <option value="1">Blog Post</option>
-                            <option value="2">Friend/Colleague</option>
-                            <option value="3">Twitter</option>
-                        </select>
-                    </label>
-                </fieldset>
-                <fieldset required>
-                    What's your skill level?
-                    <label for="beginner"
-                        ><input
-                            id="beginner"
-                            value="beginner"
-                            type="radio"
-                            name="radio-buttons"
-                            class="inline"
-                        />
-                        Beginner</label
-                    >
-                    <label for="intermediate"
-                        ><input
-                            id="intermediate"
-                            value="intermediate"
-                            type="radio"
-                            name="radio-buttons"
-                            class="inline"
-                        />
-                        Intermediate</label
-                    >
-                    <label for="advanced"
-                        ><input
-                            id="advanced"
-                            value="advanced"
-                            type="radio"
-                            name="radio-buttons"
-                            class="inline"
-                        />
-                        Advanced</label
-                    >
-                    <label for="expert"
-                        ><input
-                            id="expert"
-                            value="expert"
-                            type="radio"
-                            name="radio-buttons"
-                            class="inline"
-                        />
-                        Expert</label
-                    >
-                </fieldset>
-                <fieldset>
-                    What languages do you know? (select all that apply)
-                    <label for="python">
-                        <input
-                            id="python"
-                            value="python"
-                            name="python"
-                            type="checkbox"
-                            class="checkbox"
-                        />
-                        Python
-                    </label>
-                    <label for="javascript">
-                        <input
-                            id="javascript"
-                            value="javascript"
-                            name="javascript"
-                            type="checkbox"
-                            class="checkbox"
-                        />
-                        JavaScript
-                    </label>
-                    <label for="html">
-                        <input
-                            id="html"
-                            value="html"
-                            name="html"
-                            type="checkbox"
-                            class="checkbox"
-                        />
-                        HTML
-                    </label>
-                    <label for="css">
-                        <input
-                            id="css"
-                            value="css"
-                            name="css"
-                            type="checkbox"
-                            class="checkbox"
-                        />
-                        CSS
-                    </label>
-                    <label for="bio"
-                        >Tell us a little bit about yourself:
-                        <textarea
-                            id="bio"
-                            name="bio"
-                            rows="3"
-                            cols="30"
-                            placeholder="my first project was..."
-                        ></textarea>
-                    </label>
-                </fieldset>
-                <input type="submit" id="submit" value="Submit" />
-            </form>
-        </div>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">Survey Project</h1>
+      <p id="description">This is a small project created for freeCodeCamp's "Responsive Web Design" course.</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label" for="name"><h2>Full Name: </h2><input id="name" type="text" placeholder="your full name..." required /></label>
+      <label id="email-label" for="email"><h2>Email: </h2><input id="email" type="email" placeholder="your@email.com" required /></label>
+      <label id="number-label" for="number"><h2>Age: </h2><input id="number" type="number" min="13" max="110" placeholder="enter your age..." /></label>
+      </fieldset>
+      <fieldset>
+      <label><h2>How did you hear about us?</h2>
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Blog Post</option>
+          <option value="2">Friend/Colleague</option>
+          <option value="3">Twitter</option>
+        </select>
+      </label>
+      </fieldset>
+      <fieldset required>
+        <label id="skill-level">
+          <h2>What's your skill level?</h2>
+        <label for="beginner"><input id="beginner" value="beginner" type="radio" name="radio-buttons" class="inline"/> Beginner</label>
+        <label for="intermediate"><input id="intermediate" value="intermediate" type="radio" name="radio-buttons" class="inline"/> Intermediate</label>
+        <label for="advanced"><input id="advanced" value="advanced" type="radio" name="radio-buttons" class="inline"/> Advanced</label>
+        <label for="expert"><input id="expert" value="expert" type="radio" name="radio-buttons" class="inline"/> Expert</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="known-languages">
+          <h2>What languages do you know?</h2>
+          <p>(select all that apply)</p>
+          <label for="python">
+            <input id="python" value="python" name="python" type="checkbox" class="checkbox"/>
+            Python
+          </label>
+          <label for="javascript">
+            <input id="javascript" value="javascript" name="javascript" type="checkbox" class="checkbox"/>
+            JavaScript
+          </label>
+          <label for="html">
+            <input id="html" value="html" name="html" type="checkbox" class="checkbox"/>
+            HTML
+          </label>
+          <label for="css">
+            <input id="css" value="css" name="css" type="checkbox" class="checkbox"/>
+            CSS
+          </label>
+          <label for="bio"><h2>Tell us a little bit about yourself:</h2>
+              <textarea id="bio" name="bio" rows="3" cols="30" placeholder="as much, or as little as you like..."></textarea>
+            </label>
+          </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </div>
+</body>
 </html>
